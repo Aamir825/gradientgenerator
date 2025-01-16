@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gradient Generator App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+    <div class="card_back">
+        <div class="colors">
+            <input id="color_1" type="color" value="#00E7EB">
+            <input id="color_2" type="color" value="#ff00dd">
+        </div>
+        <div class="arrows">
+
+            <button onclick="setDirection('to top',this)"><i class="fa-solid fa-arrow-up"></i></button>
+            <button onclick="setDirection('to bottom',this)" class="active"><i
+                    class="fa-solid fa-arrow-down"></i></button>
+            <button onclick="setDirection('to right',this)"><i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="setDirection('to left',this)"><i class="fa-solid fa-arrow-left"></i></button><br>
+
+            <button id="btn" onclick="GenerateCode();">Generate Gradient</button>
+
+        </div>
+        <div class="result">
+            <p id="gradients"></p>
+            <button id="copy" onclick="copyText();">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

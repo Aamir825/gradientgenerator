@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  .card_back{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  .colors{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  .colors input{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 52px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .colors input[type="color"]::-webkit-color-swatch{
+    border-radius: 50%;
+    border: none;
+  }
+  .arrows{
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .arrows button{
+    padding: 4px 6px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    margin: 0 8px;
+    background: none;
+    cursor: pointer;
+    transition: .6s;
+  }
+  .arrows button:hover{
+    background-color: purple;
+    color: #ffff;
+  }
+  .arrows button i{
+    font-size: 14px;
+  }
+  .arrows .active{
+    background-color: purple;
+    color: #ffff;
+    border: none;
+  }
+  #btn{
+    
+    border: none;
+    background-color: purple;
+    color: #ffff;
+    padding: 6px 15px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  #btn:hover{
+    background-color: #570057;
+  }
+  .result{
+    width: 100%;
+    height: 80px;
+    background-color: #dcecf9ff;
+    padding: 20px;
+    position: relative;
+    border-radius: 3px;
+  }
+  .result #copy{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    border: none;
+    background-color: #14a2d2ff;
+    padding: 4px 10px;
+    color: #ffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .result #copy:hover{
+    background-color: #0385b0ff;
+  }
+  
